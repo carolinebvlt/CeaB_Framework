@@ -1,7 +1,11 @@
 <?php
-
 /*
-	Assume that the report of the script 'txt_processing' is ok.
+	Assume that :
+		- first line = fields names
+		- one line  = one entity
+		- fields separator = \s+
+	=> It can be checked with this script : 'txt_processing.php'.
+
 	Return an array containing associative arrays
 */
 
