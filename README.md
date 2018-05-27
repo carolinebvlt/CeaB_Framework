@@ -6,7 +6,7 @@
 
 	* __Chrono100__ : Calculate the execution time of a PHP script (run 100 times)
 
-	* __txt_processing__ : Transforme .txt file into associative arrays (CLI interactive or not)
+	* __txt_processing__ : Check file.txt integrity and transforme it into associative arrays (CLI interactive or not)
 
 * ## Functions
 
