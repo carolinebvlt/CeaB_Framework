@@ -49,10 +49,10 @@ fclose($file);
 
 // REPORT
 
-$fields_names = explode("\t", $file_in_array[0]);
+$fields_names = preg_split('/\s+/', $file_in_array[0]);
 
 for ($i=1; $i < (count($file_in_array)) ; $i++) {
-	$entity = explode("\t", $file_in_array[$i]);
+	$entity = preg_split('/\s+/', $file_in_array[$i]);
 	if (count($entity) !== count($fields_names))
 	 	$errors_entities["Line #".($i+1)] = $entity;
 	else
