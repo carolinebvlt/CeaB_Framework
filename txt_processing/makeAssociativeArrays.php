@@ -17,9 +17,9 @@ function makeAssociativeArrays($txt_file_path)
 		throw new \Exception("Error Processing 'fgets()'", 1);
 	fclose($file);
 
-	$fields_names = explode("\t", $file_in_array[0]);
+	$fields_names = preg_split('/\s+/', $file_in_array[0]);
 	for ($i=1; $i < (count($file_in_array)) ; $i++) {
-		$entity = explode("\t", $file_in_array[$i]);
+		$entity = preg_split('/\s+/', $file_in_array[$i]);
 		$entities[] = $entity;
 	}
 
