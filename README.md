@@ -11,4 +11,5 @@
 * ## Functions
 
  	* __generateRandomVar(__ *int $lenght, bool $numbers, bool $uppercase, bool $lowercase* __)__ : return a string
-	
+
+	* __makeAssociativeArrays(__ *path/file.txt* __)__ : return an array containing associative arrays
