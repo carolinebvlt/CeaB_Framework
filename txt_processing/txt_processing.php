@@ -98,3 +98,11 @@ foreach ($entities as $entity) {
 	}
 	$result[] = $new_entity;
 }
+
+// Display result
+
+foreach ($result as $entity) {
+	$rs = rtrim(fgets(STDIN));
+	if (is_string($rs))
+		print_r($entity);
+}
