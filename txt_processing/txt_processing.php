@@ -7,7 +7,7 @@
 	.txt file must have this format :
 		- first line = fields names
 		- one line  = one entity
-		- fields separator = \t
+		- fields separator = \s+
 
 	To turn off the interactive mode (CLI), define before including this script :
 		$argv[1] = '';	// path/file.txt
